@@ -1,0 +1,24 @@
+Este proyecto guarda notas en el navegador usando JavaScript con módulos ES.
+
+1. index.html
+   - Contiene la estructura visual: un textarea, dos botones y un contenedor donde se muestran las notas.
+   - Incluye el script principal "main.js" como módulo usando <script type="module">.
+   - Tiene CSS básico para darle estilo.
+
+2. storage.js
+   - Maneja todo lo relacionado al localStorage.
+   - guardarNotas(): guarda el arreglo de notas.
+   - cargarNotas(): obtiene notas guardadas o devuelve un arreglo vacío.
+   - borrarNotas(): elimina todas las notas del navegador.
+
+3. notas.js
+   - Contiene la función mostrarNotas() que recibe un contenedor y un arreglo de notas.
+   - Crea elementos <p> por cada nota y los agrega al DOM.
+
+4. main.js
+   - Importa las funciones de storage.js y notas.js.
+   - Carga las notas al iniciar la página.
+   - Agrega eventos a los botones:
+        - Guardar: toma el texto, lo agrega al arreglo y lo guarda.
+        - Borrar: elimina todas las notas.
+   - Actualiza la vista cada vez que se modifica la lista de notas.
