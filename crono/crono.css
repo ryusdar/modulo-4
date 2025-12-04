@@ -41,3 +41,10 @@ button {
 button:hover {
     background: #00bfbf;
 }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px 0;
+    color: #555;
+    font-size: 14px;
+}

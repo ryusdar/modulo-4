@@ -41,10 +41,20 @@
             border-radius: 6px;
             box-shadow: 0 0 5px rgba(0,0,0,0.05);
         }
+        footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px 0;
+    color: #555;
+    font-size: 14px;
+}
     </style>
 </head>
 
 <body>
+     <header>
+        <li><a href="../index.html">bolver al inicio</a></li>
+    </header>
     <h2>🔎 Buscador de Usuarios de GitHub</h2>
 
     <input id="username" type="text" placeholder="Ingrese nombre de usuario">
@@ -54,6 +64,10 @@
 
     <h3>📦 Repositorios</h3>
     <div id="repos"></div>
+    <footer>
+        <p>Proyecto de ejercicios con APIs — Desarrollado por Juan Manuel Ruiz</p>
+    </footer>
+
 
     <script src="script.js"></script>
 </body>
